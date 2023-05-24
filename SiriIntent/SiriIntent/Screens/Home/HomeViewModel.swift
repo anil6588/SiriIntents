@@ -8,21 +8,12 @@
 import Foundation
 
 final class HomeViewModel {
-    enum Event {
-        case screenAppear
-    }
     
     init() {
     }
     
-    func dispatch(event: Event) {
-        switch event {
-        case .screenAppear:
-            fetchNasaTodayImage()
-        }
-    }
-    
-    private func fetchNasaTodayImage() {
-        
+    func fetchData() -> HomeResponseModel {
+        let model: HomeResponseModel = "result".load()
+        return model
     }
 }

@@ -20,6 +20,10 @@
 		46622EA22A1E706800DF3BDE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46622EA12A1E706800DF3BDE /* Home.storyboard */; };
 		46622EA72A1E70E700DF3BDE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46622EA52A1E70E700DF3BDE /* HomeViewModel.swift */; };
 		46622EA82A1E70E700DF3BDE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46622EA62A1E70E700DF3BDE /* HomeViewController.swift */; };
+		46622EAA2A1E76AA00DF3BDE /* HomeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46622EA92A1E76AA00DF3BDE /* HomeResponseModel.swift */; };
+		46622EAC2A1E795500DF3BDE /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46622EAB2A1E795400DF3BDE /* String+Parser.swift */; };
+		46622EAE2A1E797A00DF3BDE /* result.json in Resources */ = {isa = PBXBuildFile; fileRef = 46622EAD2A1E797A00DF3BDE /* result.json */; };
+		46622EB02A1E7A9900DF3BDE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46622EAF2A1E7A9900DF3BDE /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		46622EA12A1E706800DF3BDE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		46622EA52A1E70E700DF3BDE /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		46622EA62A1E70E700DF3BDE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		46622EA92A1E76AA00DF3BDE /* HomeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseModel.swift; sourceTree = "<group>"; };
+		46622EAB2A1E795400DF3BDE /* String+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Parser.swift"; sourceTree = "<group>"; };
+		46622EAD2A1E797A00DF3BDE /* result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result.json; sourceTree = "<group>"; };
+		46622EAF2A1E7A9900DF3BDE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 				4641E0032A1E6E2000209679 /* SceneDelegate.swift */,
 				4641E0052A1E6E2000209679 /* ViewController.swift */,
 				4641E0072A1E6E2000209679 /* Main.storyboard */,
+				46622EAD2A1E797A00DF3BDE /* result.json */,
 				46622EA12A1E706800DF3BDE /* Home.storyboard */,
 				4641E00A2A1E6E2000209679 /* Assets.xcassets */,
 				4641E00C2A1E6E2000209679 /* LaunchScreen.storyboard */,
@@ -118,6 +127,9 @@
 			children = (
 				46622EA52A1E70E700DF3BDE /* HomeViewModel.swift */,
 				46622EA62A1E70E700DF3BDE /* HomeViewController.swift */,
+				46622EA92A1E76AA00DF3BDE /* HomeResponseModel.swift */,
+				46622EAB2A1E795400DF3BDE /* String+Parser.swift */,
+				46622EAF2A1E7A9900DF3BDE /* HomeTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -180,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46622EAE2A1E797A00DF3BDE /* result.json in Resources */,
 				4641E00E2A1E6E2000209679 /* LaunchScreen.storyboard in Resources */,
 				4641E00B2A1E6E2000209679 /* Assets.xcassets in Resources */,
 				4641E0092A1E6E2000209679 /* Main.storyboard in Resources */,
@@ -199,9 +212,12 @@
 				46622E9C2A1E706100DF3BDE /* AppCoordinator.swift in Sources */,
 				46622E9D2A1E706100DF3BDE /* HomeCoordinator.swift in Sources */,
 				46622EA82A1E70E700DF3BDE /* HomeViewController.swift in Sources */,
+				46622EAC2A1E795500DF3BDE /* String+Parser.swift in Sources */,
+				46622EB02A1E7A9900DF3BDE /* HomeTableViewCell.swift in Sources */,
 				4641E0022A1E6E2000209679 /* AppDelegate.swift in Sources */,
 				46622E9F2A1E706100DF3BDE /* Identifiable.swift in Sources */,
 				46622E9E2A1E706100DF3BDE /* Storyboard.swift in Sources */,
+				46622EAA2A1E76AA00DF3BDE /* HomeResponseModel.swift in Sources */,
 				4641E0042A1E6E2000209679 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

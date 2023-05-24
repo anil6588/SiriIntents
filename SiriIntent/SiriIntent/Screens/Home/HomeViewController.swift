@@ -10,7 +10,7 @@ import UIKit
 final class HomeViewController: UIViewController, Identifiable {
     private let viewModel: HomeViewModel
     @IBOutlet private weak var tableView: UITableView!
-    let dataSource = ["First", "Second"]
+    private var list = [ItemStack]()
     
     init?(viewModel: HomeViewModel, coder: NSCoder) {
         self.viewModel = viewModel
@@ -24,7 +24,8 @@ final class HomeViewController: UIViewController, Identifiable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.dispatch(event: .screenAppear)
+        list = viewModel.fetchData().itemStacks ?? []
+        self.title = "Product"
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -34,12 +35,12 @@ final class HomeViewController: UIViewController, Identifiable {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+        return list.count
     }
-    
+        
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = dataSource[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? HomeTableViewCell
+        cell?.setName(list[indexPath.row].name)
         return cell ?? UITableViewCell()
     }
 }

@@ -20,22 +20,30 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="6b6-bC-ILt" style="IBUITableViewCellStyleDefault" id="JZh-Ub-mYn">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="101" id="JZh-Ub-mYn" customClass="HomeTableViewCell" customModule="SiriIntent" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JZh-Ub-mYn" id="25x-vh-b73">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6b6-bC-ILt">
-                                                    <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbS-YV-W5i">
+                                                    <rect key="frame" x="36" y="15" width="321" height="71"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rbS-YV-W5i" secondAttribute="trailing" constant="16" id="5S4-ZE-Kka"/>
+                                                <constraint firstItem="rbS-YV-W5i" firstAttribute="leading" secondItem="25x-vh-b73" secondAttribute="leadingMargin" constant="16" id="YlA-gl-hXS"/>
+                                                <constraint firstItem="rbS-YV-W5i" firstAttribute="top" secondItem="25x-vh-b73" secondAttribute="topMargin" constant="4" id="vlP-fN-lt4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rbS-YV-W5i" secondAttribute="bottom" constant="4" id="yGb-oN-TKY"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="rbS-YV-W5i" id="18R-zF-GTb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -59,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131" y="-28"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
         </scene>
     </scenes>
     <resources>
