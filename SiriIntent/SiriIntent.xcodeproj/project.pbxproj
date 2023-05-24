@@ -24,6 +24,7 @@
 		46622EAC2A1E795500DF3BDE /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46622EAB2A1E795400DF3BDE /* String+Parser.swift */; };
 		46622EAE2A1E797A00DF3BDE /* result.json in Resources */ = {isa = PBXBuildFile; fileRef = 46622EAD2A1E797A00DF3BDE /* result.json */; };
 		46622EB02A1E7A9900DF3BDE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46622EAF2A1E7A9900DF3BDE /* HomeTableViewCell.swift */; };
+		46622EB32A1E7E3300DF3BDE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 46622EB22A1E7E3300DF3BDE /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46622EB32A1E7E3300DF3BDE /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,9 @@
 			dependencies = (
 			);
 			name = SiriIntent;
+			packageProductDependencies = (
+				46622EB22A1E7E3300DF3BDE /* SDWebImage */,
+			);
 			productName = SiriIntent;
 			productReference = 4641DFFE2A1E6E2000209679 /* SiriIntent.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +183,9 @@
 				Base,
 			);
 			mainGroup = 4641DFF52A1E6E2000209679;
+			packageReferences = (
+				46622EB12A1E7E3300DF3BDE /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 4641DFFF2A1E6E2000209679 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46622EB12A1E7E3300DF3BDE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46622EB22A1E7E3300DF3BDE /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46622EB12A1E7E3300DF3BDE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4641DFF62A1E6E2000209679 /* Project object */;
 }

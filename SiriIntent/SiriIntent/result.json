@@ -707,12 +707,6 @@
           }
         },
         {
-          "__typename": "AdPlaceholder",
-          "type": "SponsoredVideoAd",
-          "moduleLocation": "middle",
-          "lazy": "700"
-        },
-        {
           "__typename": "Product",
           "buyBoxSuppression": false,
           "similarItems": false,

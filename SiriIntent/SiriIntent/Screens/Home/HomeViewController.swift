@@ -40,7 +40,8 @@ extension HomeViewController: UITableViewDataSource {
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? HomeTableViewCell
-        cell?.setName(list[indexPath.row].name)
+        let item = list[indexPath.row]
+        cell?.set(name: item.name, urlString: item.imageInfo?.thumbnailUrl, price: item.priceInfo)
         return cell ?? UITableViewCell()
     }
 }

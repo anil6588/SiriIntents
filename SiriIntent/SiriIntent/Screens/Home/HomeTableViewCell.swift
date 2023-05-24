@@ -7,13 +7,19 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var nameLabel: UILabel!
-    
-    func setName(_ name: String?) {
+    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var iconImage: UIImageView!
+
+    func set(name: String?, urlString: String?, price: PriceInfo?) {
         nameLabel.text = name
+        priceLabel.text = price?.currentPrice?.priceDisplay
+        print(urlString)
+        iconImage.sd_setImage(with: URL(string: urlString ?? ""))
     }
     
 }

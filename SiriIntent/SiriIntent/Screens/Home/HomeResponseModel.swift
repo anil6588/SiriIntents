@@ -108,10 +108,10 @@ struct GroupMetaData: Decodable {
 
 // MARK: - ImageInfo
 struct ImageInfo: Decodable {
-    let thumbnailURL: String?
+    let thumbnailUrl: String?
 
     enum CodingKeys: String, CodingKey {
-        case thumbnailURL
+        case thumbnailUrl
     }
 }
  
