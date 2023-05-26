@@ -25,6 +25,8 @@
 		46622EAE2A1E797A00DF3BDE /* result.json in Resources */ = {isa = PBXBuildFile; fileRef = 46622EAD2A1E797A00DF3BDE /* result.json */; };
 		46622EB02A1E7A9900DF3BDE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46622EAF2A1E7A9900DF3BDE /* HomeTableViewCell.swift */; };
 		46622EB32A1E7E3300DF3BDE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 46622EB22A1E7E3300DF3BDE /* SDWebImage */; };
+		DE63E2772A207348001BDE0F /* SiriIntentShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63E2752A207348001BDE0F /* SiriIntentShortcuts.swift */; };
+		DE63E2782A207348001BDE0F /* WishlistIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63E2762A207348001BDE0F /* WishlistIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		46622EAB2A1E795400DF3BDE /* String+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Parser.swift"; sourceTree = "<group>"; };
 		46622EAD2A1E797A00DF3BDE /* result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result.json; sourceTree = "<group>"; };
 		46622EAF2A1E7A9900DF3BDE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		DE63E2752A207348001BDE0F /* SiriIntentShortcuts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriIntentShortcuts.swift; sourceTree = "<group>"; };
+		DE63E2762A207348001BDE0F /* WishlistIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		4641E0002A1E6E2000209679 /* SiriIntent */ = {
 			isa = PBXGroup;
 			children = (
+				DE63E2742A207328001BDE0F /* AppIntent */,
 				46622EA32A1E70E700DF3BDE /* Screens */,
 				46622E952A1E706100DF3BDE /* Coordinator */,
 				46622E982A1E706100DF3BDE /* Helper */,
@@ -134,6 +139,15 @@
 				46622EAF2A1E7A9900DF3BDE /* HomeTableViewCell.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		DE63E2742A207328001BDE0F /* AppIntent */ = {
+			isa = PBXGroup;
+			children = (
+				DE63E2752A207348001BDE0F /* SiriIntentShortcuts.swift */,
+				DE63E2762A207348001BDE0F /* WishlistIntent.swift */,
+			);
+			path = AppIntent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE63E2772A207348001BDE0F /* SiriIntentShortcuts.swift in Sources */,
 				46622EA02A1E706100DF3BDE /* Coordinator.swift in Sources */,
+				DE63E2782A207348001BDE0F /* WishlistIntent.swift in Sources */,
 				46622EA72A1E70E700DF3BDE /* HomeViewModel.swift in Sources */,
 				46622E9C2A1E706100DF3BDE /* AppCoordinator.swift in Sources */,
 				46622E9D2A1E706100DF3BDE /* HomeCoordinator.swift in Sources */,
